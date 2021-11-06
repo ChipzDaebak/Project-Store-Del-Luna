@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    flex-wrap: wrap;
+}
+
+.content1 {
+    display: flex;
+    background-image: url('../assets/background1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bigLogo {
+    padding-top: 20px;
+    height: 450px;
+    width: 450px;
+}
+
+.title {
+    font-size: 400%;
+    color: white;
+    margin-top: 100px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.desc {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 100px;
+    font-weight: bold;
+}
+
+.title2 {
+    background-color: #e3f0ff;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    height: 90px;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.content2 {
+    background-image: url('../assets/background2.jpg');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    flex-direction: row;
+    height: 550px;
+    justify-content: center;
+}
+
+.content2>hr {
+    height: 2px;
+    width: 500px;
+    background-color: #004fa7;
+    color: black;
+    margin-top: 30px;
+}
+
+#lsaquo,
+#rsaquo {
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    padding: 4px 4px 5px 4px;
+    border-radius: 100%;
+    margin: 60px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 4px 0px black;
+}
+
+.albumImage>img {
+    width: 900px;
+    height: 450px;
+}
+
+.albumImage {
+    float: left;
+    height: 450px;
+}
+
+.slider-mask {
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 15px 0px black;
+}
+
+.album-container {
+    position: relative;
+}
+
+@media screen and (max-width:600px) {
+    .desc {
+        font-size: 80%;
+        padding: 0;
+    }
+    .bigLogo {
+        height: 40%;
+        width: 40%;
+        padding: 0;
+    }
+    .title {
+        font-size: 200%;
+        padding: 0;
+        margin-top: 25px;
+    }
+    .content1 {
+        background-size: cover;
+    }
+    .albumImage>img {
+        width: 440px;
+        height: 220px;
+    }
+    .albumImage {
+        float: left;
+        height: 220px;
+    }
+    .content2 {
+        height: 320px;
+        background-size: cover;
+    }
+    .title2 {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+    #lsaquo, #rsaquo{
+        margin: 10px;
+    }
+    .slider-mask{
+        border-radius: 20px;
+    }
+}

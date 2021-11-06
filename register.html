@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../css/styleRegister.css">
+    <link rel="stylesheet" href="../css/headerFooter.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="burger-menu">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+
+                <div class="pages">
+                    <a class="album" href="./Album.html">K-Pop Albums</a>
+                    <a class="merchandise" href="./Merchandise.html">Merchandises</a>
+                    <a class="testi" href="./testimoni.html">Testimonial</a>
+                </div>
+            </div>
+            <a href="./home.html"><img class="logo" src="../assets/Logo Del Luna.png">
+                <div class="navbar">
+                    <div class="blackName">Store </div>
+                    <div class="whiteName">Del Luna</div>
+                </div>
+            </a>
+        </div>
+        <div class="register">
+            <a href="register.html">Register</a>
+        </div>
+    </header>
+    <div class="background">
+        <div class="content">
+            <div class="logo-body">
+                <img src="../assets/Logo Del Luna.png">
+                <h1>Store Del Luna</h1>
+            </div>
+            <div class="form">
+                <h1>Registration</h1>
+                <form action="" method="POST" id="form">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <div id="error-username" class="error">
+                    </div>
+            
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div id="error-pass" class="error">
+                    </div>
+                    
+                    <label for="confirm-password">Confirmation Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                    <div id="error-confirmPass" class="error">
+                    </div>
+        
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="full-name" id="full-name" value="">
+                    <div id="error-fullname" class="error">
+                    </div>
+            
+                    <label for="">Gender</label>
+                    <div class="gender">
+                        <input type="radio" name="gender" id="male" value="female">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div id="error-gender" class="error">
+                    </div>
+        
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <div id="error-email" class="error">
+                    </div>
+        
+                    <label for="age">Age</label>
+                    <input type="text" name="age" id="age">
+                    <div id="error-age" class="error">
+                    </div>
+        
+                    <div class="cekbox">
+                        <input type="checkbox" id="check" name="checkbox">
+                    <label for="checkbox">Terms and Conditions</label>
+                    </div>
+                    <div id="error-cekbox" class="error">
+                    </div>
+                    <br>
+                    <div class="submit">
+                        <input type="submit" value="Register" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://www.instagram.com/"><img class="contact" src="../assets/instagram.png"></a>
+            <a href="https://www.facebook.com/"><img class="contact" src="../assets/facebook.png"></a>
+            <a href="https://www.twitter.com/"><img class="contact" src="../assets/twitter.png"></a>
+            <a href="https://www.youtube.com/"><img class="contact" src="../assets/youtube.png"></a>
+        </div>
+        <br>
+        <div class="credit">
+            &copy; 2021 Del Luna. All Rights Reserved
+        </div>
+    </footer>
+    <script src="../js/validation.js"></script>
+</body>
+</html>

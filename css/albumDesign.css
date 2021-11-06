@@ -1,0 +1,178 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #a6fcf7;
+}
+
+.albummain
+{
+    display: flex;
+    background-image: url("../assets/backgroundalbum.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albumtitle
+{
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    font-weight: bolder;
+    text-shadow: 0px 2px 2px black;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.albumdesc
+{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-bottom: 100px;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px black;
+}
+
+.groupselection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.groupselection >h2
+{
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 200%;
+    border-top: 2px solid black;
+    border-bottom: 5px solid black;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.btslogo img
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.groupdesc
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.albumlist{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: #76fff4;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.albumlist img
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: 1px solid black;
+}
+
+.desc{
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 0px 2px 4px black;
+}
+
+.revelogo img
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.blackpinklogo img
+{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.btslogo,.revelogo, .blackpinklogo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px)
+{
+    .btslogo >img
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .revelogo >img
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .blackpinklogo >img
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .albumtitle
+    {
+        font-size: 40px;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .albumdesc
+    {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .albumlist>img
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .groupselection
+    {
+        height: 30%;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #blackpinklast{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+

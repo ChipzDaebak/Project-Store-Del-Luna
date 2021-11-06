@@ -1,0 +1,101 @@
+h1 {
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+    margin: 0;
+    font-size: 60px;
+}
+
+h4 {
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-left: 22%;
+    padding-right: 22%;
+    padding-bottom: 20px;
+}
+
+.testimonial {
+    background-color: rgb(227, 240, 255);
+    flex-direction: column;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.photo-container {
+    display: flex;
+    border: 2px solid black;
+    background-color: rgb(244, 192, 0);
+    border-radius: 20px;
+    padding: 16px;
+    margin-bottom: 60px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    /* height: 250px; */
+}
+
+.photo-container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.photo-container img {
+    display: flex;
+    /* flex-direction: column; */
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 175px;
+    border: 4px solid #0078ff;
+    padding: 10px;
+}
+
+.photo-container p {
+    justify-content: center;
+}
+
+hr {
+    /* position: absolute; */
+    background-color: black;
+    color: black;
+    height: 1px;
+    width: 80%;
+    align-items: center;
+}
+
+.photo-container span {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .photo-container {
+        text-align: center;
+    }
+    .photo-container img {
+        margin: auto;
+        float: none;
+        display: block;
+        width: 150px;
+        height: 125px;
+    }
+    .photo-container span {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h4{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
